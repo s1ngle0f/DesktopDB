@@ -141,7 +141,7 @@ namespace DesktopDB
                 updateCommand = new NpgsqlCommand($"update clients " +
                                                                 $"set email = '{updatedUser.login}', " +
                                                                 $"psswrd = '{updatedUser.password}', " +
-                                                                $"fk_address = {null}, " +
+                                                                //$"fk_address = {null}, " +
                                                                 $"role = '{updatedUser.role}' " +
                                                                 $"where id = {updatedUser.id}",
                                                                 connection);
